@@ -17,10 +17,9 @@ endfunction
 task run_phase(uvm_phase phase);
 super.run_phase(phase);
 phase.raise_objection(this);
-repeat(200) begin 
 sq.start(e1.a1.s1);
-end
 phase.drop_objection(this);
 endtask
 endclass
+
 
